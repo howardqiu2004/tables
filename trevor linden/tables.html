@@ -5,7 +5,7 @@
 <style>
 	body {
 	background-color:      #459DA1;	
-	background-image:      url('TrevorLinden.jpg');
+	background-image:      url('background.jpg');
 	background-repeat:     no-repeat;
 	background-size:       cover;
 	background-attachment: fixed;
@@ -13,23 +13,25 @@
 	}
 	
 	div {
-	background-color: white;
-	border:			  1px solid black;
-	box-shadow:		  -20px 20px 40px black;
+	background-color: rgba(0,0,0,.1);
+	border:			  1px solid whites;
 	padding: 		  20px;
-	position:         absolute;
 	right:            40px;
 	top:              40px;
-	width:            400px;	
+	width:            500px;
+	position: absolute;
+	
 	}
 	
 	table {
 	width: 400px;
+	float: center;
 	}
 	
 	table, th, td {
-	border: 1px solid black;
+	border: 1px solid white;
 	border-collapse: collapse;
+	color: white;
 	}
 	
 	th, td {
@@ -37,21 +39,35 @@
 	}
 	
 	th {
-	background-color: black;
-	color: grey;
+	color: white;
 	}
 	
 	td:hover {
-	background-color: green;
+	background-color: rgba(0,30,10,0.9);
 	color: white;
 	}
 	
 	tr:nth-child(even) {
-	background-color: #DDD;
+	background-color: rgba(0,0,80,.7);
 	}
 	
-	tr: nth-child(odd) {
-	background-color: #EEE;
+	tr:nth-child(odd) {
+	background-color: rgba(0,0,50,.7);
+	}
+	a:hover {
+		color: white;
+	}
+	
+	a:active {
+		color: white; 
+	}
+	
+	a:link {
+		color: white;
+	}
+	
+	a:visited {
+		color: white;
 	}
 	
 	
@@ -59,21 +75,34 @@
 </head>
 <body> 
 	<div>
+		<h1 style="color:white">Rainbow 6: Siege Game Ratings</h1>
 		<table>
 			<tr>
-				<th>Season</th>	<th>Team</th> 	<th>GP</th>	<th>G</th>	<th>A</th>	<th>P</th>	<th>+/-</th>
+				<th><b>Critics</b></th>	<th><b>Scores</b></th>
 			</tr>
 			<tr>
-				<td>88-89</td> 	<td>VAN</td> 	<td>80</td> 	<td>30</td> 	<td>29</td> 	<td>59</td> 	<td>-10</td>
+				<td><a href="ca.ign.com">IGN</a></td> 	<td>8.5/10</td>
 			</tr>
 			<tr>
-				<td>89-90</td> 	<td>VAN</td> 	<td>73</td> 	<td>21</td> 	<td>30</td> 	<td>51</td> 	<td>-17</td>
+				<td><a href="https://www.gamespot.com/">GameSpot</a></td> 	<td>8/10</td>
 			</tr>
 			<tr>
-				<td>90-91</td> 	<td>VAN</td> 	<td>80</td> 	<td>33</td> 	<td>37</td> 	<td>70</td> 	<td>-25</td>
+				<td><a href="https://www.pcgamer.com/">PC Gamer (US)</a></td> 	<td>90/100</td>
 			</tr>
 			<tr>
-				<td>91-92</td> 	<td>VAN</td> 	<td>80</td> 	<td>31</td> 	<td>44</td> 	<td>75</td> 	<td>3</td>
+				<td><a href="https://www.polygon.com/">Polygon</a></td> 	<td>6/10</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.gamerevolution.com/">Game Revolution</a></td> 	<td>4/5</td>
+			</tr>
+			<tr>
+				<td><a href='https://www.metacritic.com/'>Metacritic (PC)</a></td> 	<td>79/100</td>
+			</tr>
+			<tr>
+				<td><a href='https://www.metacritic.com/'>Metacritic (XB1)</a></td> 	<td>74/100</td>
+			</tr>
+			<tr>
+				<td><a href='https://www.metacritic.com/'>Metacritic (PS4)</a></td> 	<td>73/100</td>
 			</tr>
 		</table>
 	</div>
